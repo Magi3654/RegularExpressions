@@ -21,15 +21,18 @@ button.className='check'
 
 const regularExpGen=document.getElementById('expresion');
 
-RegExp(regularExpGen)
-
+let myPattern=RegExp(regularExpGen);
 const parrafo = document.createElement("p");
 
-if (RegExp.test(frase)) {
+if (myPattern.test(frase)) {
   parrafo.textContent = "Si hizo match";
 } else {
   parrafo.textContent = "No hizo match";
 }
 
+
+expresiones.appendChild(expRegular);
+expresiones.appendChild(frase);
+expresiones.appendChild(button);
 document.body.appendChild(parrafo);
 
