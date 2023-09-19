@@ -41,9 +41,9 @@ header{
 .result{
     background-color: #9CBFA7;
     color:#E8EBF7;
-    font-size:2rem;
-    width: 50%;
-    height: 100%;
+    font-size:x-large;
+    width: 80%;
+    min-height: 20rem; 
     display: flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -65,7 +65,7 @@ button{
     
 }
 input{
-    
+    size:8rem;
     font-size: 2rem;
     flex-wrap: wrap-reverse;
     justify-content: right;
