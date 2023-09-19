@@ -3,13 +3,15 @@ const btn2 = document.getElementById("limpiarBtn");
 const pTag = document.querySelector(" .result ");
 let generalInput = document.getElementById("generalInput");
 let expresionR = document.getElementById("expresion");
+let flags = document. getElementById("flag");
 btn.addEventListener("click", (e) => {
   let myString = generalInput.value;
   let expresionRV=expresionR.value;
-  const regPattern = RegExp(expresionRV, "gimu");
+  let expFlag=flags.value;
+  const regPattern = RegExp(expresionRV, expFlag);
   const result = myString.match(regPattern);
   if (result) {
-    pTag.innerHTML = "Coincidencia: "+ result;
+    pTag.innerHTML = `Coincidencia: ${result.length}; ` +`${result}`;
   } else pTag.innerHTML = "Coincidencia: 0";
 });
 
@@ -18,6 +20,8 @@ limpiarBtn.addEventListener("click", () => {
   expresionR.value = "";
   pTag.innerHTML="";
 });
+
+
 
 // falta hponer el numero de conincidencias
 
