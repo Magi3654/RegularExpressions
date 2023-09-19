@@ -1,17 +1,24 @@
+@import url('https://fonts.google.com/specimen/Mooli');
+
 :root{
     --color-texto:#FFFFFF;
-    --color-fondo:#124559;
+    --color-fondo:#C9F299;
     --color-titulos:#4F345A ;
-    --color-fondo-oscuro:#C9F299;
+    --color-fondo-oscuro:#5D4E6D;
 }
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 62.5%;
 }
 body{
-    background: var(--color-texto);
+    background: linear-gradient(#8FA998, #4F345A);
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
     box-sizing: border-box;
     font-size: 35.5%;
     display:flex;
@@ -19,20 +26,56 @@ body{
     align-items: center;
 }
 header{
-    height: 8rem;
+  
+    height: 6rem;
     width: 100%;
-    color:var(--color-titulos);
-    background-color: var(--color-fondo-oscuro);
-    font-size: 1rem;
+    color:var(--color-texto);
+    font-size: 4rem;
     display: flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content: center;
+    align-items: center;
+    margin: 2rem;
 }
 .result{
-    background-color: #124559;
+    background-color: #9CBFA7;
     color:#E8EBF7;
-    font-size:26px;
-    min-height: 100px;
-    min-width: 500px;
+    font-size:2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+button{
+    font-size: 2rem;
+    width: 15rem;
+    height: 4rem;
+    margin: 2rem 0;
+    padding: .6rem 3.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: var(--color-texto);
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+input{
+    
+    font-size: 2rem;
+    flex-wrap: wrap-reverse;
+    justify-content: right;
+    margin:  1rem ;
+    padding: 1rem ;
+
+}
+h1{
+    font-size: 2rem;
+    color: #E8EBF7;
+
+    
 }
